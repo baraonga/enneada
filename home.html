@@ -9,7 +9,7 @@
 <textarea name = "writehere" rows = "25" cols = "70" placeholder="Тут можно писать"></textarea>
 </form></p>
  
- <form id="search_params" action="/basa/dictionary.php">
+ <form id="search_params" action="/dictionary.php">
 	<div>
 		<input type="hidden" name="sit" value="dictionary" /><br />
 		
@@ -18,8 +18,13 @@
 				<tr>
 					<td>Введите слово или его часть на русском языке:</td>
 					<td>
-						<input name="translation" value="" class="param" /></td>
+						<input name="rus" value="" class="param" /></td>
 				</tr>
+				<tr>
+					<td>Введите слово или его часть на эннеадском языке:</td>
+					<td>
+						<input name="ennead" value="" class="param" /></td>
+				</tr>				
 				<tr>
 					<td>
 						<input type="button" onclick="search()" value="Поиск" /></td>
