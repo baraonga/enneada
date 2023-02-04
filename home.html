@@ -8,5 +8,30 @@
 <form>
 <textarea name = "writehere" rows = "25" cols = "70" placeholder="Тут можно писать"></textarea>
 </form></p>
+ 
+ <form id="search_params" action="/basa/dictionary.php">
+	<div>
+		<input type="hidden" name="sit" value="dictionary" /><br />
+		
+		<table>
+			<tbody>
+				<tr>
+					<td>Введите слово или его часть на русском языке:</td>
+					<td>
+						<input name="translation" value="" class="param" /></td>
+				</tr>
+				<tr>
+					<td>
+						<input type="button" onclick="search()" value="Поиск" /></td>
+				</tr>
+			</tbody>
+		</table></div>
+</form>
+<div align="center" id="search_result"></div></td>
+                          </tr>
+                          <tr>
+                            <td align="center" valign="top" class="stext"></td>
+                   </tr>
+                        </table></td>
 </body>
 </html>
